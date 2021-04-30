@@ -1,0 +1,28 @@
+{
+    "recettes": [
+        {
+            "name": "test",
+            "steps": [{
+                "id": 1,
+                "step":"ajouter"
+                },
+                {
+                    "id": 2,
+                    "step": "melanger"
+                }
+            ]
+        },
+        {
+            "name": "autre test",
+            "steps": [{
+                    "id": 1,
+                    "step":"ajouter plus"
+                },
+                {
+                    "id": 2,
+                    "step": "melanger plus"
+                }
+            ]
+        }
+    ]
+}
