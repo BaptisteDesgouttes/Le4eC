@@ -24,5 +24,15 @@
                 }
             ]
         }
+    ],
+    "ingredients": [
+        {
+            "id": 1,
+            "name": "banane"
+        },
+        {
+            "id": 2,
+            "name": "pomme"
+        }
     ]
 }
