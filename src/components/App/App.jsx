@@ -20,7 +20,7 @@ function App() {
         <p>Test : 
           <a
             className="App-link"
-            href="../Testindex.js"
+            href="./test"
             target="_blank"
             rel="noopener noreferrer"
           >

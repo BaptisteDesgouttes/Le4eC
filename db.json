@@ -1,38 +1,50 @@
 {
     "recettes": [
         {
+            "id": 0,
             "name": "test",
-            "steps": [{
-                "id": 1,
-                "step":"ajouter"
+            "ingredients": [
+                {
+                    "id": 0,
+                    "name": "banane"
                 },
                 {
-                    "id": 2,
+                    "id": 1,
+                    "name": "pomme"
+                }
+            ],
+            "steps": [{
+                    "id": 0,
+                    "step":"ajouter"
+                },
+                {
+                    "id": 1,
                     "step": "melanger"
                 }
             ]
         },
         {
+            "id": 1,
             "name": "autre test",
-            "steps": [{
+            "ingredients": [
+                {
+                    "id": 0,
+                    "name": "sucre"
+                },
+                {
                     "id": 1,
+                    "name": "sel"
+                }
+            ],
+            "steps": [{
+                    "id": 0,
                     "step":"ajouter plus"
                 },
                 {
-                    "id": 2,
+                    "id": 1,
                     "step": "melanger plus"
                 }
             ]
-        }
-    ],
-    "ingredients": [
-        {
-            "id": 1,
-            "name": "banane"
-        },
-        {
-            "id": 2,
-            "name": "pomme"
         }
     ]
 }
