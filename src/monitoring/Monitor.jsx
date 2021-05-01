@@ -18,7 +18,7 @@ let ingredients = [
 
 const Monitor = () => {
   const [recipe, setRecipe] = useState({"name":null, "steps":[]})
-  fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recettes')
+  fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recipes')
     .then(result => result.json())
     .then(data => {
       setRecipe(data[0]);
