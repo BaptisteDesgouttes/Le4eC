@@ -21,6 +21,7 @@ const Monitor = () => {
   fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recipes')
     .then(result => result.json())
     .then(data => {
+      console.log(data);
       setRecipe(data[0]);
     })
     .catch(console.error);
