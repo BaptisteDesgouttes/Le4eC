@@ -3,15 +3,22 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './index.css';
 import Monitor from './monitoring/Monitor.jsx';
+import Chat from './components/Chat/Chat.jsx';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
+
         <Route exact path='/'>
           <Monitor />
         </Route>
+
+        <Route path='/chat'>
+          <Chat />
+        </Route>
+
       </Switch>
     </Router>
   </React.StrictMode>,

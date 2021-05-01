@@ -72,4 +72,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # SPECIFICATIONS
+### to run the programm
 npm install react-router-dom
+
+### to put the datas on a personal server
+npm install -g json-server
+### and launch while npm run start :
+npx json-server --watch db.json --port 8000

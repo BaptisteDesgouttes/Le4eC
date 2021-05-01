@@ -1,51 +1,69 @@
 {
-    "recipes": [
+  "recipes": [
+    {
+      "id": 0,
+      "name": "test",
+      "ingredients": [
         {
-            "id": 0,
-            "name": "test",
-            "ingredients": [
-                {
-                    "id": 0,
-                    "name": "banane"
-                },
-                {
-                    "id": 1,
-                    "name": "pomme"
-                }
-            ],
-            "steps": [{
-                    "id": 0,
-                    "step":"ajouter"
-                },
-                {
-                    "id": 1,
-                    "step": "melanger"
-                }
-            ]
+          "id": 0,
+          "name": "banane"
         },
         {
-            "id": 1,
-            "name": "autre test",
-            "ingredients": [
-                {
-                    "id": 0,
-                    "name": "sucre"
-                },
-                {
-                    "id": 1,
-                    "name": "sel"
-                }
-            ],
-            "steps": [{
-                    "id": 0,
-                    "step":"ajouter plus"
-                },
-                {
-                    "id": 1,
-                    "step": "melanger plus"
-                }
-            ]
+          "id": 1,
+          "name": "pomme"
         }
-    ],
-    "chat": []
+      ],
+      "steps": [
+        {
+          "id": 0,
+          "step": "ajouter"
+        },
+        {
+          "id": 1,
+          "step": "melanger"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "autre test",
+      "ingredients": [
+        {
+          "id": 0,
+          "name": "sucre"
+        },
+        {
+          "id": 1,
+          "name": "sel"
+        }
+      ],
+      "steps": [
+        {
+          "id": 0,
+          "step": "ajouter plus"
+        },
+        {
+          "id": 1,
+          "step": "melanger plus"
+        }
+      ]
+    }
+  ],
+  "chat": [
+    {
+      "pseudo": "feaf",
+      "content": "vdvs",
+      "id": 1
+    },
+    {
+      "pseudo": "bfsb",
+      "content": "bcx xc",
+      "id": 2
+    },
+    {
+      "pseudo": "vdqv",
+      "content": "fxbn",
+      "id": 3
+    }
+  ]
 }

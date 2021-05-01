@@ -1,9 +1,23 @@
 import { React, useState } from 'react';
 
+const postMessage = (pseudo, content) => {
+    fetch('http://localhost:8000/chat', 
+            {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json',
+
+                },
+                body: JSON.stringify({pseudo, content})
+            })
+        .catch(console.error);
+        console.log({"pseudo": pseudo, "content": content});
+};
+
 export const FakeChat = (props) => {
     const [pseudo, setPseudo] = useState('');
     const [content, setContent] = useState('');
-    //const [message, setMessage] = useState({ pseudo:'', content:''});
+    
     return (
         <div className='stepRecipe'>
             <input 
@@ -23,11 +37,19 @@ export const FakeChat = (props) => {
                 { 
                     if (event.key === 'Enter')
                     {
-                        console.log({"pseudo": pseudo, "content": content});
+                        postMessage(pseudo, content);
                     }
                 }}
             />
-            <button type='submit' onClick={() => console.log({"pseudo": pseudo, "content": content})}>Send</button>
+            <button type='submit' onClick={() => postMessage(pseudo, content)}>Send</button>
+            <button type='button' onClick={() => {
+                fetch('http://localhost:8000/chat')
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(console.error);
+            }}>
+                GET
+            </button>
         </div>
     );
 };
