@@ -49,21 +49,8 @@
       ]
     }
   ],
-  "chat": [
-    {
-      "pseudo": "feaf",
-      "content": "vdvs",
-      "id": 1
-    },
-    {
-      "pseudo": "bfsb",
-      "content": "bcx xc",
-      "id": 2
-    },
-    {
-      "pseudo": "vdqv",
-      "content": "fxbn",
-      "id": 3
-    }
-  ]
+  "chat": {
+    "pseudo": "Bonjour24fr",
+    "content": "Sifr"
+  }
 }

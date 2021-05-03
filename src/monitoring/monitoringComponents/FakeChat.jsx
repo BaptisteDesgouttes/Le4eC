@@ -1,17 +1,15 @@
 import { React, useState } from 'react';
 
-const postMessage = (pseudo, content) => {
+const updateChat = (data, usedMethod) => {
     fetch('http://localhost:8000/chat', 
             {
-                method: 'POST',
+                method: usedMethod,
                 headers: {
-                    'Content-type': 'application/json',
-
+                    'Content-type': 'application/json'
                 },
-                body: JSON.stringify({pseudo, content})
+                body: JSON.stringify(data)
             })
         .catch(console.error);
-        console.log({"pseudo": pseudo, "content": content});
 };
 
 export const FakeChat = (props) => {
@@ -37,19 +35,12 @@ export const FakeChat = (props) => {
                 { 
                     if (event.key === 'Enter')
                     {
-                        postMessage(pseudo, content);
+                        updateChat({pseudo, content}, 'PUT');
                     }
                 }}
             />
-            <button type='submit' onClick={() => postMessage(pseudo, content)}>Send</button>
-            <button type='button' onClick={() => {
-                fetch('http://localhost:8000/chat')
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(console.error);
-            }}>
-                GET
-            </button>
+            <button type='submit' onClick={() => updateChat({pseudo, content}, 'PUT')}>Send</button>
+            <button type='button' onClick={() => updateChat({'pseudo':'Nightbot','content':'Bienvenue sur le chat !'}, 'PUT')}>RESET</button>
         </div>
     );
 };
