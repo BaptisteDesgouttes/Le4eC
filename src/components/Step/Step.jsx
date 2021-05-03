@@ -5,9 +5,7 @@ export const Ings = (props) => {
     const [stepNum, setStepNum] = useState(0);
     const [divStep, setdivStep] = useState(<div></div>);
 
-    useEffect(() => {
-        console.log('change');
-        return (
+    useEffect(() => (
         fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recipes')
             .then(result => result.json())
             .then(data => {
@@ -19,7 +17,7 @@ export const Ings = (props) => {
                 )
             })
             .catch(console.error)
-    )});
+    ));
                         
     return (
         <div className='step'>
