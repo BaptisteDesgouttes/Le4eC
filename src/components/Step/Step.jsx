@@ -3,21 +3,31 @@ import './Step.css';
 
 export const Ings = (props) => {
     const [stepNum, setStepNum] = useState(0);
-    const [divStep, setdivStep] = useState(<div></div>);
+    const [recipe, setRecipe] = useState({
+        "id": 0,
+        "name": "",
+        "ingredients": [{
+            "id": 0,
+            "name": ""
+          }],
+        "steps": [{
+            "id": 0,
+            "name": ""
+          }]
+      });
 
-    useEffect(() => (
+    useEffect(() => {
+        const interval = setInterval(() => {
         fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recipes')
             .then(result => result.json())
             .then(data => {
-                setdivStep(
-                    <div className='activeStep'>
-                        <p>{'Etape '.concat(data.find(element => element.name === props.name).steps[stepNum].id + 1).concat(' : ')}</p>
-                        <p>{data.find(element => element.name === props.name).steps[stepNum].step}</p>
-                    </div>
-                )
+                setRecipe(data.find(element => element.name === props.name));
             })
             .catch(console.error)
-    ));
+        }, 1000);
+
+        return () => clearInterval(interval);
+      });
                         
     return (
         <div className='step'>
@@ -35,7 +45,11 @@ export const Ings = (props) => {
                     NEXT STEP
                 </button>
             </div>
-            {divStep}
+            
+            <div className='activeStep'>
+                <p>{'Etape '.concat(recipe.steps[stepNum].id + 1).concat(' : ')}</p>
+                <p>{recipe.steps[stepNum].step}</p>
+            </div>
         </div>
     );}
 

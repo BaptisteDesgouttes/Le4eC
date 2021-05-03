@@ -29,28 +29,64 @@
       "name": "autre test",
       "ingredients": [
         {
-          "id": 0,
+          "id": 2,
           "name": "sucre"
         },
         {
-          "id": 1,
+          "id": 3,
           "name": "sel"
         }
       ],
       "steps": [
         {
-          "id": 0,
+          "id": 2,
           "step": "ajouter plus"
         },
         {
-          "id": 1,
+          "id": 3,
           "step": "melanger plus"
         }
       ]
     }
   ],
+  "steps": [
+    {
+      "check": true,
+      "id": 0
+    },
+    {
+      "check": true,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "check": false
+    },
+    {
+      "id": 3,
+      "check": false
+    }
+  ],
+  "ingredients": [
+    {
+      "id": 0,
+      "check": false
+    },
+    {
+      "id": 1,
+      "check": false
+    },
+    {
+      "id": 2,
+      "check": false
+    },
+    {
+      "id": 3,
+      "check": false
+    }
+  ],
   "chat": {
-    "pseudo": "Bonjour2",
-    "content": "salut 3212"
+    "pseudo": "Nightbot",
+    "content": "Bienvenue sur le chat !"
   }
 }
