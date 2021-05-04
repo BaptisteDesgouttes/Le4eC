@@ -11,7 +11,6 @@ export const StepRecipe = (props) => (
                     return recipe;
                 })
                 .then(newRecipe => {
-                    console.log(event.target.value);
                     fetch('http://localhost:8000/recipes/'.concat(props.recipeId), 
                         {
                             method: 'PUT',

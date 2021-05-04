@@ -1,13 +1,15 @@
+//React
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './index.css';
-import App from './components/App/App.jsx'
+//components
 import Monitor from './monitoring/Monitor.jsx';
 import Chat from './components/Chat/Chat.jsx'
 import Back from './components/Back/Back.jsx'
 import Ings from "./components/Ings/Ings.jsx"
 import Step from "./components/Step/Step.jsx"
+
 import reportWebVitals from './reportWebVitals';
 
 // let recipesNames = ['test', 'autre test'];
@@ -21,13 +23,12 @@ ReactDOM.render(
     <Router>
         <Switch>
 
+          {/* Monitors online and in real time the different pages */}
           <Route exact path='/'>
             <Monitor />
           </Route>
 
-          <Route path='/app'>
-            <App />
-          </Route>
+          {/* Pages to render in OBS */}
 
           <Route path='/chat'>
             <Chat />

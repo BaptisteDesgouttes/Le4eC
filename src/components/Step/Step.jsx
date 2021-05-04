@@ -29,8 +29,6 @@ export const Step = (props) => {
     return (
         <div className='step'>
             <div className='activeStep'>
-                {/* <p>{'Etape '.concat(recipe.steps[stepNum].id + 1).concat(' : ')}</p>
-                <p>{recipe.steps[stepNum].step}</p> */}
                 <p>{'Etape '.concat(stepNum + 1).concat(' : ')}</p>
                 <p>{stepText}</p>
             </div>
