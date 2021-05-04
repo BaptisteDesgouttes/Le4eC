@@ -73,7 +73,7 @@ const Monitor = () => {
       <div className='steps'>
         <h4>STEPS</h4>
         <div className='choicesteps'>
-          {recipe.steps.map(step => <StepRecipe key={step.id} id={step.id} todo={step.step} />)}
+          {recipe.steps.map(step => <StepRecipe key={step.id} id={step.id} recipeId={recipe.id} todo={step.step} />)}
         </div>
       </div>
 

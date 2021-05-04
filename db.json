@@ -6,21 +6,25 @@
       "ingredients": [
         {
           "id": 0,
-          "name": "banane"
+          "name": "banane",
+          "check": false
         },
         {
           "id": 1,
-          "name": "pomme"
+          "name": "pomme",
+          "check": false
         }
       ],
       "steps": [
         {
           "id": 0,
-          "step": "ajouter"
+          "step": "ajouter",
+          "check": true
         },
         {
           "id": 1,
-          "step": "melanger"
+          "step": "melanger",
+          "check": false
         }
       ]
     },
@@ -29,22 +33,26 @@
       "name": "autre test",
       "ingredients": [
         {
-          "id": 2,
-          "name": "sucre"
+          "id": 0,
+          "name": "sucre",
+          "check": false
         },
         {
-          "id": 3,
-          "name": "sel"
+          "id": 1,
+          "name": "sel",
+          "check": false
         }
       ],
       "steps": [
         {
-          "id": 2,
-          "step": "ajouter plus"
+          "id": 0,
+          "step": "ajouter plus",
+          "check": false
         },
         {
-          "id": 3,
-          "step": "melanger plus"
+          "id": 1,
+          "step": "melanger plus",
+          "check": false
         }
       ]
     }
@@ -59,12 +67,12 @@
       "id": 1
     },
     {
-      "id": 2,
-      "check": false
+      "check": true,
+      "id": 2
     },
     {
-      "id": 3,
-      "check": false
+      "check": true,
+      "id": 3
     }
   ],
   "ingredients": [
@@ -86,7 +94,7 @@
     }
   ],
   "chat": {
-    "pseudo": "Nightbot",
-    "content": "Bienvenue sur le chat !"
+    "pseudo": "EvanDuv",
+    "content": "Salut les cuisinos"
   }
 }

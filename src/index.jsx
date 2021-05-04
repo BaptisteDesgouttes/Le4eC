@@ -13,7 +13,7 @@ import reportWebVitals from './reportWebVitals';
 // let recipesNames = ['test', 'autre test'];
 // let recipeName = 'autre test';
 
-let recipeName = "autre test";
+let recipeName = "test";
 
 ReactDOM.render(
 
