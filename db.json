@@ -51,11 +51,11 @@
   ],
   "steps": [
     {
-      "check": true,
+      "check": false,
       "id": 0
     },
     {
-      "check": true,
+      "check": false,
       "id": 1
     },
     {

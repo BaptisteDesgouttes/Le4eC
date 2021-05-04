@@ -10,7 +10,7 @@ export const StepRecipe = (props) => {
                     headers: {
                         'Content-type': 'application/json'
                     },
-                    body: JSON.stringify({"check": props.id.toString() === event.target.value.toString()})
+                    body: JSON.stringify({"check": true})
                 })
                 .catch(console.error)
         )}>

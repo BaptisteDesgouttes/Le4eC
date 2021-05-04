@@ -72,7 +72,9 @@ const Monitor = () => {
       {/* Monitors which step of the recipe is currently realized */}
       <div className='steps'>
         <h4>STEPS</h4>
-        {recipe.steps.map(step => <StepRecipe key={step.id} id={step.id} todo={step.step} />)}
+        <div className='choicesteps'>
+          {recipe.steps.map(step => <StepRecipe key={step.id} id={step.id} todo={step.step} />)}
+        </div>
       </div>
 
       {/* Management of ingredients */}
@@ -90,5 +92,17 @@ const Monitor = () => {
     </div>
   );
 }
+// eslint-disable-next-line no-lone-blocks
+{/* onClick={(event) =>{ ( recipe.steps.map(step => (
+            fetch('http://localhost:8000/steps/'.concat(step.id), 
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify({"check": false})
+                })
+                .catch(console.error)
+              ))) */}
 
 export default Monitor;
