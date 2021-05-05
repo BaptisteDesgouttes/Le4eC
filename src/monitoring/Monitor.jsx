@@ -80,7 +80,7 @@ const Monitor = () => {
       {/* Management of ingredients */}
       <div className='ingredients'>
       <h4>INGREDIENTS</h4>
-        {recipe.ingredients.map(ing => <Ingredients key={ing.id} id={ing.id} ingredient={ing.name} />)}
+        {recipe.ingredients.map(ing => <Ingredients key={ing.id} id={ing.id} recipeId={recipe.id} ingredient={ing.name} />)}
       </div>
       
       {/* Allows to feed the fake chat */}

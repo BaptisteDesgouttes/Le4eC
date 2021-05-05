@@ -7,7 +7,7 @@
         {
           "id": 0,
           "name": "banane",
-          "check": false
+          "check": true
         },
         {
           "id": 1,
@@ -19,12 +19,12 @@
         {
           "id": 0,
           "step": "ajouter",
-          "check": false
+          "check": true
         },
         {
           "id": 1,
           "step": "melanger",
-          "check": true
+          "check": false
         }
       ]
     },

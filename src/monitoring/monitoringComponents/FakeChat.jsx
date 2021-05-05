@@ -84,7 +84,7 @@ export const FakeChat = () => {
 //             />
 //             <button type='submit' onClick={() => updateChat({pseudo, content})}>Send</button>
 //             <button type='button' onClick={() => (
-//                 fetch('http://localhost:8000[]', 
+//                 fetch('http://localhost:8000/db', 
 //                 {
 //                     method: 'PUT',
 //                     headers: {
