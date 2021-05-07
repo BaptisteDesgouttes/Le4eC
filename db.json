@@ -10,7 +10,7 @@
       {
         "id": 1,
         "name": "3 Pommes",
-        "check": false
+        "check": true
       },
       {
         "id": 2,
@@ -20,7 +20,7 @@
       {
         "id": 3,
         "name": "1/2 c. à soupe de cannelle",
-        "check": false
+        "check": true
       },
       {
         "id": 4,
