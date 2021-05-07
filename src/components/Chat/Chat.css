@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Lato:wght@900&display=swap');
+
 .chat{
-    background-color: darkgrey;
-    padding: 50px;
+    background-color: rgba(255, 255, 255, .66);
+    padding:20px;
+    color: #494949;
+    width: 300px;
+    height: 150px;
+}
+
+p{
+    margin: 0;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 27px;
+    margin-top: 0;
+}
+
+.content{
+    font-family: 'Lato', sans-serif;
+}
+
+.pseudo{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }

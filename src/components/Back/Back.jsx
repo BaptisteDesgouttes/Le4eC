@@ -16,8 +16,8 @@ export const Back = (props) => {
       });
     return (
         <div className='back'>
-            <img src='https://www.madmoizelle.com/wp-content/uploads/2014/04/hello-kitty-oeuf.jpg' alt='emission logo' />
-            <h2 className='showTitle'>Le4eC</h2>
+            {/* <img src='https://www.madmoizelle.com/wp-content/uploads/2014/04/hello-kitty-oeuf.jpg' alt='emission logo' /> */}
+            {/* <h2 className='showTitle'>Le4eC</h2> */}
             <h4 className='recipeName'>{recipeName}</h4>
         </div>
     );

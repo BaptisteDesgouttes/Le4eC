@@ -27,7 +27,7 @@ export const Chat = (props) => {
 
     return (
         <div className='chat'>
-            <h3>CHAT</h3>
+            <h3>Chat</h3>
             <div className='messages'>      
                 {messages.map(message => (
                     <div className='message' key={message.pseudo.concat(message.content)}>
