@@ -10,12 +10,12 @@
       {
         "id": 1,
         "name": "3 Pommes",
-        "check": false
+        "check": true
       },
       {
         "id": 2,
         "name": "1 c. à soupe de sucre",
-        "check": false
+        "check": true
       },
       {
         "id": 3,
@@ -25,12 +25,12 @@
       {
         "id": 4,
         "name": "Jaune d'oeuf",
-        "check": false
+        "check": true
       },
       {
         "id": 5,
         "name": "Lait",
-        "check": false
+        "check": true
       }
     ],
     "steps": [

@@ -17,7 +17,7 @@ export const Ings = (props) => {
 
     return (
         <div className='ingredients'>
-            <h3>INGREDIENTS</h3>
+            <h3>Ingrédients</h3>
             <div className='ings'>
                 <ul>
                     {/* For each ingredient, we create a text which will be have a different aspect if they are currently used in the step */}

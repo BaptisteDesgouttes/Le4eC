@@ -11,7 +11,6 @@ const Monitor = () => {
   // Get the current recipe.
   useEffect(() => {
     const interval = setInterval(() => {
-      // fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recipe')
       fetch('http://localhost:8000/recipe')
         .then(result => result.json())
         .then(data => {

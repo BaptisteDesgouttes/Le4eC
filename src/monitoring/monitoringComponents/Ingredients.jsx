@@ -3,7 +3,7 @@ import { React, useState } from 'react';
 export const Ingredients = (props) => {
     const [check, setCheck] = useState(true);
     return ( 
-        <div className='ingredient' >
+        <div className='ingredientsManagement' >
             <input
                 type='checkbox' // Several ingredients can be chosen at a time.
                 id={'ing'.concat(props.id)}

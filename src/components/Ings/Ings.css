@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Lato:wght@400;900&display=swap');
 
 .ingredients{
     background-color: rgba(255, 255, 255, .66);
-    padding:20px;
+    padding: 20px;
     color: #494949;
     width: 300px;
-    height: 150px;
+    height: 300px;
+    text-align: center;
+}
+
+.ings{
+    height: 80%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 15%;
+}
+
+li{
+    padding: 2px;
 }
 
 p{
@@ -20,11 +35,14 @@ h3{
 
 .regular{
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .bold{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    font-size: 20px;
 }
 
 
