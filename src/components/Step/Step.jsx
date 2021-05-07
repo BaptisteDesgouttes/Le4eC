@@ -7,19 +7,13 @@ export const Step = (props) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            fetch('https://my-json-server.typicode.com/BaptisteDesgouttes/Le4eC/recipes')
-                .then(result => result.json())
-                .then(data => data.find(element => element.name === props.name)) //return the current recipe to fetch its data
-                .then(recipe => {
-                     fetch('http://localhost:8000/recipes/'.concat(recipe.id))
-                        .then(response => response.json())
-                        .then(data => data.steps.find(step => step.check)) //return the id of the current step
-                        .then(step => {
-                            setStepNum(step.id);
-                            setStepText(step.step);
-                        })
-                        .catch(console.error);
-                    })
+            fetch('http://localhost:8000/recipe')
+                .then(response => response.json())
+                .then(data => data.steps.find(step => step.check)) //return the id of the current step
+                .then(step => {
+                    setStepNum(step.id + 1);
+                    setStepText(step.step);
+                })
                 .catch(console.error);
             }, 1000);
             
@@ -29,8 +23,8 @@ export const Step = (props) => {
     return (
         <div className='step'>
             <div className='activeStep'>
-                <p>{'Etape '.concat(stepNum + 1).concat(' : ')}</p>
-                <p>{stepText}</p>
+                <p className='activeStepNum'>{'Etape '.concat(stepNum).concat(' : ')}</p>
+                <p className='activeStepContent'>{stepText}</p>
             </div>
         </div>
     );}

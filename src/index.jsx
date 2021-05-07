@@ -12,11 +12,6 @@ import Step from "./components/Step/Step.jsx"
 
 import reportWebVitals from './reportWebVitals';
 
-// let recipesNames = ['test', 'autre test'];
-// let recipeName = 'autre test';
-
-let recipeName = "test";
-
 ReactDOM.render(
 
   <React.StrictMode>
@@ -35,15 +30,15 @@ ReactDOM.render(
           </Route>
           
           <Route path='/back'>
-            <Back name={recipeName} />
+            <Back />
           </Route>
           
           <Route path='/ingredients'>
-            <Ings name={recipeName} />
+            <Ings />
           </Route>
           
           <Route path='/step'>
-            <Step name={recipeName} />
+            <Step />
           </Route>
 
         </Switch>

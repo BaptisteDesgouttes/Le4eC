@@ -5,27 +5,24 @@ export const Ingredients = (props) => {
     return ( 
         <div className='ingredient' >
             <input
-                type='checkbox'
+                type='checkbox' // Several ingredients can be chosen at a time.
                 id={'ing'.concat(props.id)}
                 name='usedIngredient'
-                value={props.id}
+                value={props.id} // Allows to compare the target value and the props id.
                 onClick={(event) => {
-                    fetch('http://localhost:8000/recipes/'.concat(props.recipeId))
+                    setCheck(current => !current); //Each click on the input change the boolean from right to false or the opposite.
+                    fetch('http://localhost:8000/recipe')
                         .then(response => response.json())
                         .then(data => {
-                            setCheck(current => !current);
-                            return data;
-                        })
-                        .then(data => {
-                            console.log(props.ingredient.concat(' : ').concat(check));
                             let recipe = data;
+                            // Change the value of the ingredient clicked (the right instance of the component)
                             recipe.ingredients.find(ing => ing.id === props.id).check = check;
                             return recipe;
                         })
                         .then(newRecipe => {
-                            fetch('http://localhost:8000/recipes/'.concat(props.recipeId), 
+                            fetch('http://localhost:8000/recipe', 
                                 {
-                                    method: 'PUT',
+                                    method: 'PUT', // Update of the recipe, with current ingredients checked to true. components/Ings.jsx will fetch this data.
                                     headers: {
                                         'Content-type': 'application/json'
                                     },

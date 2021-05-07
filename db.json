@@ -1,62 +1,86 @@
 {
-  "recipes": [
-    {
-      "id": 0,
-      "name": "test",
-      "ingredients": [
-        {
-          "id": 0,
-          "name": "banane",
-          "check": true
-        },
-        {
-          "id": 1,
-          "name": "pomme",
-          "check": false
-        }
-      ],
-      "steps": [
-        {
-          "id": 0,
-          "step": "ajouter",
-          "check": true
-        },
-        {
-          "id": 1,
-          "step": "melanger",
-          "check": false
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "autre test",
-      "ingredients": [
-        {
-          "id": 0,
-          "name": "sucre",
-          "check": false
-        },
-        {
-          "id": 1,
-          "name": "sel",
-          "check": false
-        }
-      ],
-      "steps": [
-        {
-          "id": 0,
-          "step": "ajouter plus",
-          "check": true
-        },
-        {
-          "id": 1,
-          "step": "melanger plus",
-          "check": false
-        }
-      ]
-    }
-  ],
+  "recipe": {
+    "name": "Chaussons aux pommes",
+    "ingredients": [
+      {
+        "id": 0,
+        "name": "Pâte feuilletée",
+        "check": false
+      },
+      {
+        "id": 1,
+        "name": "3 Pommes",
+        "check": false
+      },
+      {
+        "id": 2,
+        "name": "1 c. à soupe de sucre",
+        "check": false
+      },
+      {
+        "id": 3,
+        "name": "1/2 c. à soupe de cannelle",
+        "check": false
+      },
+      {
+        "id": 4,
+        "name": "Jaune d'oeuf",
+        "check": false
+      },
+      {
+        "id": 5,
+        "name": "Lait",
+        "check": false
+      }
+    ],
+    "steps": [
+      {
+        "id": 0,
+        "step": "Préchauffez le four à 230°C.",
+        "check": false
+      },
+      {
+        "id": 1,
+        "step": "Coupez les pommes en quartiers.",
+        "check": false
+      },
+      {
+        "id": 2,
+        "step": "Faire cuire les pommes avec un fond d'eau à feu doux jusqu'à que l'eau soit évaporée et que les pommes soient à l'état de compote.",
+        "check": false
+      },
+      {
+        "id": 3,
+        "step": "Retirez du feu et broyez le tout finement, sans mixeur.",
+        "check": false
+      },
+      {
+        "id": 4,
+        "step": "Ajoutez la cannelle et le sucre.",
+        "check": false
+      },
+      {
+        "id": 5,
+        "step": "Coupez la pâte feuilletée en ronds et mouillez le bord.",
+        "check": false
+      },
+      {
+        "id": 6,
+        "step": "Déposez dans la pâte feuilletée une bonne cuillère de compote et fermez les bords en les rabattant.",
+        "check": false
+      },
+      {
+        "id": 7,
+        "step": "Dorez avec un mélange jaune d'oeuf et lait.",
+        "check": false
+      },
+      {
+        "id": 8,
+        "step": "Enfournez 15 à 20 minutes à 230°C.",
+        "check": true
+      }
+    ]
+  },
   "chat": {
     "pseudo": "Nightbot",
     "content": "Bienvenue sur le chat !"

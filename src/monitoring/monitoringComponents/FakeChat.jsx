@@ -1,5 +1,6 @@
 import { React, useState } from 'react';
 
+// Update the database with the new message
 const updateChat = (dataBody, usedMethod) => {
     fetch('http://localhost:8000/chat', 
             {
@@ -12,12 +13,13 @@ const updateChat = (dataBody, usedMethod) => {
         .catch(console.error);
 };
 
-export const FakeChat = () => {
+export const FakeChat = (props) => {
     const [pseudo, setPseudo] = useState('');
     const [content, setContent] = useState('');
     
     return (
-        <div className='stepRecipe'>
+        <div className='fakeChat'>
+            {/* Update the pseudo */}
             <input 
                 type='text'
                 placeholder='Fake Name'
@@ -25,6 +27,7 @@ export const FakeChat = () => {
                     setPseudo(event.target.value);
                 }}
             />
+            {/* Update the content of the message */}
             <input 
                 type='text'
                 placeholder='Fake Chat'
@@ -33,69 +36,16 @@ export const FakeChat = () => {
                 }}
                 onKeyPress={(event) => 
                 { 
+                    // If we press enter in this last field, the message is sent
                     if (event.key === 'Enter') updateChat({pseudo, content}, 'PUT');
                 }}
             />
+            {/* To send the message */}
             <button type='submit' onClick={() => updateChat({pseudo, content}, 'PUT')}>Send</button>
+            {/* To reset the chat with the default message */}
             <button type='button' onClick={() => updateChat({'pseudo':'Nightbot','content':'Bienvenue sur le chat !'}, 'PUT')}>RESET</button>
         </div>
     );
 };
-
-
-//TEST
-
-
-// import { React, useState } from 'react';
-
-// const updateChat = (dataBody) => {
-//     fetch('http://localhost:8000/chat', 
-//             {
-//                 method: 'POST',
-                
-//                 body: JSON.stringify(dataBody)
-//             })
-//         .catch(console.error);
-// };
-
-// export const FakeChat = () => {
-//     const [pseudo, setPseudo] = useState('');
-//     const [content, setContent] = useState('');
-    
-//     return (
-//         <div className='stepRecipe'>
-//             <input 
-//                 type='text'
-//                 placeholder='Fake Name'
-//                 onChange={(event) => {
-//                     setPseudo(event.target.value);
-//                 }}
-//             />
-//             <input 
-//                 type='text'
-//                 placeholder='Fake Chat'
-//                 onChange={(event) => {
-//                     setContent(event.target.value);
-//                 }}
-//                 onKeyPress={(event) => 
-//                 { 
-//                     if (event.key === 'Enter') updateChat({pseudo, content});
-//                 }}
-//             />
-//             <button type='submit' onClick={() => updateChat({pseudo, content})}>Send</button>
-//             <button type='button' onClick={() => (
-//                 fetch('http://localhost:8000/db', 
-//                 {
-//                     method: 'PUT',
-//                     headers: {
-//                         'Content-type': 'application/json'
-//                     },
-//                     body: JSON.stringify({"chat":[{'pseudo':'Nightbot','content':'Bienvenue sur le chat !'}]})
-//                 })
-//             .catch(console.error)
-//             )}>RESET</button>
-//         </div>
-//     );
-// };
 
 export default FakeChat;

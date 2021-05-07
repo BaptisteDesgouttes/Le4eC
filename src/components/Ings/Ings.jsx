@@ -6,10 +6,9 @@ export const Ings = (props) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            fetch('http://localhost:8000/recipes')
+            fetch('http://localhost:8000/recipe')
                 .then(result => result.json())
-                .then(data => data.find(element => element.name === props.name)) //return the current recipe to fetch its data
-                .then(recipe => setIngredientsList(recipe.ingredients))
+                .then(data => setIngredientsList(data.ingredients)) // data contains the recipe
                 .catch(console.error);
             }, 1000);
             
@@ -21,6 +20,7 @@ export const Ings = (props) => {
             <h3>INGREDIENTS</h3>
             <div className='ings'>
                 <ul>
+                    {/* For each ingredient, we create a text which will be have a different aspect if they are currently used in the step */}
                     {ingredientsList.map(ing => ing.check ? <li key={ing.id} className="bold">{ing.name}</li> : <li key={ing.id} className="regular">{ing.name}</li>)}
                 </ul>
             </div>
