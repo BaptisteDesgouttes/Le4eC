@@ -10,7 +10,7 @@
       {
         "id": 1,
         "name": "3 Pommes",
-        "check": true
+        "check": false
       },
       {
         "id": 2,
@@ -20,7 +20,7 @@
       {
         "id": 3,
         "name": "1/2 c. à soupe de cannelle",
-        "check": true
+        "check": false
       },
       {
         "id": 4,
@@ -77,7 +77,7 @@
       {
         "id": 8,
         "step": "Enfournez 15 à 20 minutes à 230°C.",
-        "check": true
+        "check": false
       }
     ]
   },
