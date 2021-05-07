@@ -23,7 +23,8 @@ export const Step = (props) => {
     return (
         <div className='step'>
             <div className='activeStep'>
-                <p className='activeStepNum'>{'Etape '.concat(stepNum).concat(' : ')}</p>
+                {/* <p className='activeStepNum'>{'Etape '.concat(stepNum).concat(' : ')}</p> */}
+                <p className='activeStepNum'>{'Etape de la recette'}</p>
                 <p className='activeStepContent'>{stepText}</p>
             </div>
         </div>

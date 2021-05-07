@@ -20,17 +20,17 @@
       {
         "id": 3,
         "name": "1/2 c. à soupe de cannelle",
-        "check": false
+        "check": true
       },
       {
         "id": 4,
         "name": "Jaune d'oeuf",
-        "check": true
+        "check": false
       },
       {
         "id": 5,
         "name": "Lait",
-        "check": true
+        "check": false
       }
     ],
     "steps": [
@@ -47,7 +47,7 @@
       {
         "id": 2,
         "step": "Faire cuire les pommes avec un fond d'eau à feu doux jusqu'à que l'eau soit évaporée et que les pommes soient à l'état de compote.",
-        "check": false
+        "check": true
       },
       {
         "id": 3,
@@ -82,7 +82,7 @@
     ]
   },
   "chat": {
-    "pseudo": "Nightbot",
-    "content": "Bienvenue sur le chat !"
+    "pseudo": "Debo69",
+    "content": "J'adore les pommes ^^"
   }
 }

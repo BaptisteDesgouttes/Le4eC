@@ -9,7 +9,18 @@
 h4{
     margin:0;
     font-family: 'Inter', sans-serif;
-    font-size: 27px;
+    font-size: 50px;
     color: #494949;
+    padding-top: 100px;
+    text-align: right;
+    padding-right: 670px;
+    padding-bottom: 10px;
 }
+.video{
+    width: 1152px;
+    background-color: rgba(255, 255, 255, .66);
+    height: 648px;
+    margin-left: 100px;
+}
+
 
